@@ -1,0 +1,12 @@
+version: '2'
+services:
+    lsbtest-postgresql:
+        container_name: lsbtest-postgresql
+        image: postgres:9.5.4
+        # volumes:
+        #     - ~/volumes/jhipster/LSBTest/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=LSBTest
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
